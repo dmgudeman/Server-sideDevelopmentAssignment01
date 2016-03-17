@@ -51,7 +51,6 @@ dishRouter.route('/:dishId')
 
 app.use('/dishes', dishRouter);
 
-/* use the files in the public folder */
 app.use(express.static(__dirname + '/public'));
 
 app.listen(port, hostname, function() {
